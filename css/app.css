@@ -77,7 +77,6 @@ img {
 
 .header__navegacion {
     display: flex;
-    gap: 4rem;
     justify-content: space-evenly;
     padding-top: 4rem;
 }
@@ -87,6 +86,10 @@ img {
         justify-content: flex-end;
 
     }
+}
+
+.header__enlace {
+    margin: 0 4rem;
 }
 
 .header__flex {
@@ -163,9 +166,12 @@ img {
 .trabajos__grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
     align-items: center;
+}
+
+.trabajo {
+    margin: 2rem;
 }
 
 .trabajo__imagen {
