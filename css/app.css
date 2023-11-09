@@ -175,7 +175,7 @@ img {
 }
 
 .trabajo__imagen {
-    max-width: 23rem;
+    width: 23rem;
 }
 
 .trabajo__contenido {
