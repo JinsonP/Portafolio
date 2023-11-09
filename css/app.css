@@ -54,7 +54,6 @@ img {
 
 /** header **/
 .header {
-    height: 60rem;
     background-image: url(../img/fondo.avif);
     background-position: center;
     background-size: cover;
