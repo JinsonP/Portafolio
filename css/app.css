@@ -54,24 +54,27 @@ img {
 
 /** header **/
 .header {
-    background-image: url(../img/fondo.avif);
-    background-position: center;
+    height: 60rem;
+    opacity: .9;
+    background-position: center ;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 1;
 }
 
-.header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%);
-    opacity: .6;
-    z-index: -1;
+.notavif.notwebp .header {
+    background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.jpg);
+
+}
+
+.webp .header {
+    background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.webp);
+
+}
+
+.avif .header {
+    background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.avif);
+
 }
 
 .header__navegacion {
@@ -127,6 +130,7 @@ img {
     border-radius: 15rem;
     border: 7px solid rgba(255, 255, 255, 0.20);
     z-index: 100;
+    overflow: hidden;
 }
 .acercade__bio {
     margin: 3rem 0;
@@ -175,6 +179,8 @@ img {
 
 .trabajo__imagen {
     width: 23rem;
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .trabajo__contenido {
