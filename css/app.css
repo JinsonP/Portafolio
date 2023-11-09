@@ -130,19 +130,19 @@ img {
 }
 .acercade__bio {
     margin: 3rem 0;
+    text-align: justify;
 }
 
 .acercade__title {
     color: var(--secundario);
-    font-weight: normal;
-    text-align: center;
+    font-weight: 300;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .acercade__texto {
     line-height: 1.5;
     width: 90%;
-    text-align: center;
     margin: 0 auto;
 }
 
