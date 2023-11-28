@@ -75,7 +75,6 @@ img {
 
 .avif .header {
     background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.avif);
-
 }
 
 .header__navegacion {
@@ -87,7 +86,6 @@ img {
 @media (min-width: 768px) {
     .header__navegacion {
         justify-content: flex-end;
-
     }
 }
 
@@ -115,6 +113,7 @@ img {
 }
 
 .header__title {
+    text-align: center;
     font-weight: 300;
 }
 
@@ -297,7 +296,7 @@ img {
     align-items: center;
     width: 10rem;
     height: 6rem;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 .footer__icon--twitter {
