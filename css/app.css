@@ -114,7 +114,7 @@ img {
 
 .header__title {
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /** acerca de **/
@@ -139,7 +139,7 @@ img {
 
 .acercade__title {
     color: var(--secundario);
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -152,6 +152,7 @@ img {
 
 .acercade__texto--azul {
     color: var(--principal);
+    font-weight: 700;
 }
 
 /** Trabajos **/
@@ -167,10 +168,20 @@ img {
 }
 
 .trabajos__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+}
+
+@media (min-width: 768px) {
+    .trabajos__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .trabajos__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .trabajo {
@@ -181,6 +192,7 @@ img {
     width: 23rem;
     border-radius: .5rem;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .trabajo__contenido {
