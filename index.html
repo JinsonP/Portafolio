@@ -26,7 +26,21 @@
 
     <section class="acercade">
         <div class="acercade__imagen">
-            <img src="img/perfil.jpg" alt="imagen perfil">
+            <picture>
+                <source
+                    sizes="640w" 
+                    srcset="img/imagen-640.avif 640w" 
+                    type="image/avif">
+                <source
+                    sizes="640w" 
+                    srcset="img/imagen-640.webp 640w" 
+                    type="image/webp">
+                <source
+                    sizes="640w" 
+                    srcset="img/imagen-640.jpg 640w" 
+                    type="image/jpeg">
+                <img loading="lazy" decoding="async" src="img/perfil.jpg"  width="500" height="300">
+            </picture>
         </div>
 
         <div class="acercade__contenedor">
@@ -54,7 +68,7 @@
                             sizes="640w" 
                             srcset="img/fondo.jpg 640w" 
                             type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="img/fondo.jpg" lazyalt="imagen" width="500" height="300">
+                        <img loading="lazy" decoding="async" src="img/fondo.jpg"  width="500" height="300">
                     </picture>
 
                     <div class="trabajo__contenido">
@@ -77,7 +91,7 @@
                             sizes="640w" 
                             srcset="img/fondo.jpg 640w" 
                             type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="img/fondo.jpg" lazyalt="imagen" width="500" height="300">
+                        <img loading="lazy" decoding="async" src="img/fondo.jpg"  width="500" height="300">
                     </picture>
 
                     <div class="trabajo__contenido">
@@ -100,30 +114,7 @@
                             sizes="640w" 
                             srcset="img/fondo.jpg 640w" 
                             type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="img/fondo.jpg" lazyalt="imagen" width="500" height="300">
-                    </picture>
-            
-                    <div class="trabajo__contenido">
-                        <h3 class="trabajo__titulo">Calculadora</h3>
-                        <p class="trabajo__tecnologias">Html - Css - Js</p>
-                    </div>
-                </div>
-
-                <div class="trabajo__card">
-                    <picture>
-                        <source
-                            sizes="640w" 
-                            srcset="img/fondo.avif 640w" 
-                            type="image/avif">
-                        <source
-                            sizes="640w" 
-                            srcset="img/fondo.webp 640w" 
-                            type="image/webp">
-                        <source
-                            sizes="640w" 
-                            srcset="img/fondo.jpg 640w" 
-                            type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="img/fondo.jpg" lazyalt="imagen" width="500" height="300">
+                        <img loading="lazy" decoding="async" src="img/fondo.jpg"  width="500" height="300">
                     </picture>
             
                     <div class="trabajo__contenido">
@@ -146,7 +137,7 @@
                             sizes="640w" 
                             srcset="img/fondo.jpg 640w" 
                             type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="img/fondo.jpg" lazyalt="imagen" width="500" height="300">
+                        <img loading="lazy" decoding="async" src="img/fondo.jpg"  width="500" height="300">
                     </picture>
             
                     <div class="trabajo__contenido">
@@ -169,7 +160,30 @@
                             sizes="640w" 
                             srcset="img/fondo.jpg 640w" 
                             type="image/jpeg">
-                        <img loading="lazy" decoding="async" src="img/fondo.jpg" lazyalt="imagen" width="500" height="300">
+                        <img loading="lazy" decoding="async" src="img/fondo.jpg"  width="500" height="300">
+                    </picture>
+            
+                    <div class="trabajo__contenido">
+                        <h3 class="trabajo__titulo">Calculadora</h3>
+                        <p class="trabajo__tecnologias">Html - Css - Js</p>
+                    </div>
+                </div>
+
+                <div class="trabajo__card">
+                    <picture>
+                        <source
+                            sizes="640w" 
+                            srcset="img/fondo.avif 640w" 
+                            type="image/avif">
+                        <source
+                            sizes="640w" 
+                            srcset="img/fondo.webp 640w" 
+                            type="image/webp">
+                        <source
+                            sizes="640w" 
+                            srcset="img/fondo.jpg 640w" 
+                            type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="img/fondo.jpg"  width="500" height="300">
                     </picture>
             
                     <div class="trabajo__contenido">
