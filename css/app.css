@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 :root {
     --principal: #3895EA;
     --secundario: #DD820D;
@@ -20,139 +22,138 @@ body {
     font-size: 1.6rem;
 }
 
-/** Globales **/
-h1, h2, h3 {
-    margin: 0;
+img {
+    max-width: 100%;
 }
 
-h1 {
-    font-size: 5rem;
-}
 
-h2 {
-    font-size: 3.4rem;
-}
-
-h3 {
-    font-size: 2.4rem;
-}
-
-a {
-    text-decoration: none;
-    color: var(--blanco);
-}
-
-.contenedor {
+[class$="__contenedor"] {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
 }
 
-img { 
-    max-width: 100%;
-    display: block;
+[class$="__heading"] {
+    margin: 0;
+    text-align: center;
 }
+
+.social {
+    width: 10rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
 
 /** header **/
 .header {
-    height: 60rem;
-    opacity: .9;
-    background-position: center ;
+    height: 70rem;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .notavif.notwebp .header {
-    background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.jpg);
-
+    background-image: linear-gradient(to right, rgb(0 89 192 / 0.55),rgb(0 89 192 / 0.50)),url(../img/fondo.jpg);
 }
 
 .webp .header {
-    background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.webp);
-
+    background-image: linear-gradient(to right, rgb(0 89 192 / 0.55),rgb(0 89 192 / 0.50)),url(../img/fondo.webp);
 }
 
 .avif .header {
-    background-image: linear-gradient(100deg, rgba(0, 89, 192, 0.80) 0.27%, rgba(0, 89, 192, 0.66) 0.28%, rgba(5, 92, 191, 0.65) 100%), url(../img/fondo.avif);
+    background-image: linear-gradient(to right, rgb(0 89 192 / 0.55),rgb(0 89 192 / 0.50)),url(../img/fondo.avif);
+
 }
 
-.header__navegacion {
+.navegacion {
+    padding-top: 5rem;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 4rem;
+    justify-content: center;
+    gap: 4rem;
 }
 
 @media (min-width: 768px) {
-    .header__navegacion {
+    .navegacion {
         justify-content: flex-end;
     }
 }
 
-.header__enlace {
-    margin: 0 4rem;
+.navegacion__enlace {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
 }
 
-.header__flex {
-    display: flex;
-    height: 50rem;
-    justify-content: center;
-    align-items: center;
+.navegacion__enlace:hover {
+    background-color: var(--principal);
 }
 
 .header__contenido {
-    max-width: 38rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+    width: 90%;
+    margin: 25rem auto 0 auto;
+    text-align: center;
     color: var(--blanco);
     border: 2px solid var(--blanco);
     border-radius: .5rem;
 }
 
-.header__title {
-    text-align: center;
-    font-weight: 400;
+@media (min-width: 768px) {
+    .header__contenido {
+        width: 40%;
+        margin: 20rem auto 0 auto;
+    }
 }
 
-/** acerca de **/
-.acercade__flex {
-    display: flex;
-    justify-content: center;
-    margin: -5rem 0 0 0;
+.header__heading {
+    padding: 1rem 1rem;
+    font-weight: 300;
+    font-size: 3rem;
 }
 
+@media (min-width: 768px) {
+    .header__heading {
+        font-size: 5rem;
+    }
+}
+
+.header__texto {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+/** Acerca de **/
 .acercade__imagen {
     width: 15rem;
-    height: 15rem;
-    border-radius: 15rem;
-    border: 7px solid rgba(255, 255, 255, 0.20);
-    z-index: 100;
+    border: 10px solid rgb(255 255 255 / 0.20);
+    border-radius: 50%;
     overflow: hidden;
-}
-.acercade__bio {
-    margin: 3rem 0;
-    text-align: justify;
+    margin: -6rem auto 0 auto;
 }
 
-.acercade__title {
+@media (min-width: 768px) {
+    .acercade__imagen {
+        width: 20rem;
+        margin: -10rem auto 0 auto;
+    }
+}
+
+.acercade__heading {
+    padding-top: 2rem;
     color: var(--secundario);
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 .acercade__texto {
+    text-align: justify;
+    font-size: 1.8rem;
     line-height: 1.5;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.acercade__texto--azul {
-    color: var(--principal);
-    font-weight: 700;
 }
 
 /** Trabajos **/
@@ -160,80 +161,74 @@ img {
     background-color: #F2F2F2;
 }
 
-.trabajos__title {
-    padding: 4rem 0;
-    text-align: center;
-    font-weight: 300;
+.trabajos__heading {
     color: #323068;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 4rem;
 }
 
-.trabajos__grid {
+.trabajo {
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
-    .trabajos__grid {
+    .trabajo {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 992px) {
-    .trabajos__grid {
-        grid-template-columns: repeat(4, 1fr);
+    .trabajo {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-.trabajo {
-    margin: 2rem;
-}
-
 .trabajo__imagen {
-    width: 23rem;
     border-radius: .5rem;
-    overflow: hidden;
-    margin: 0 auto;
 }
 
-.trabajo__contenido {
-    text-align: center;   
-    padding: 1rem;
-    line-height: 1.5;
-}  
-
-.trabajo__texto {
+.trabajo__titulo,
+.trabajo__tecnologias {
     margin: 0;
+    text-align: center;
+}
+
+.trabajo__titulo {
+    color: var(--principal);
 }
 
 /** Contacto **/
-.contacto {
-    margin-top: 5rem;
-}
-
-.contacto__title {
-    text-align: center;
+.contacto__heading {
+    padding: 4rem 0;
+    font-size: 3rem;
     font-weight: 300;
     color: var(--principal);
 }
 
 .formulario {
-    width: min(60rem, 100%);
-    color: #A4A4A4;
-    padding: 2rem;
+    width: min( 70rem, 100% );
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .formulario__grid {
+    .formulario__contenido {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 20rem ;
         column-gap: 1rem;
+    }
+
+    .formulario__campo:nth-child(3) {
+        grid-column: 1 / 3;
     }
 }
 
-.formulario__campo:last-of-type {
-    grid-column: 1 / 3;
+.formulario__campo {
+    margin-bottom: 1rem;
 }
 
 .formulario__input,
@@ -241,36 +236,24 @@ img {
     width: 100%;
     padding: 1.5rem;
     border-radius: .5rem;
-    margin-top: 1rem;
-}
-@media (min-width: 768px) {
-    .formulario__input,
-    .formulario__textarea {
-        margin-top: 0rem;
-    }
-    
+    border: 2px solid #CECECE;
 }
 
 .formulario__textarea {
-    margin-top: 1rem;
-    height: 10rem;
+    height: 20rem;
 }
 
-
-@media (min-width: 768px) {
-    .formulario__campo--centrado {
-        display: flex;
-        justify-content: center;
-    }
+.formulario__campo-submit {
+    margin: 2rem 0;
+    text-align: center;
 }
 
 .formulario__submit {
-    margin-top: 2rem;
     width: 100%;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: .5rem;
     background-color: var(--principal);
+    border-radius: .5rem;
+    border: none;
+    padding: 1rem 3rem;
     color: var(--blanco);
     cursor: pointer;
     transition-property: background-color;
@@ -279,54 +262,42 @@ img {
 
 @media (min-width: 768px) {
     .formulario__submit {
-        width: 15rem;
-        height: 5rem;
+        width: auto;
     }
 }
 
 .formulario__submit:hover {
-    background-color: #3080e0;
+    background-color: #3B5998;
 }
 
-/** footer **/
+/** Footer **/
 .footer {
     background-color: #161818;
+    padding: 5rem 0;
 }
 
 .footer__grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 5rem;
-    margin: 0 auto;
+    gap: 1rem;
 }
 
-.footer__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    height: 6rem;
-    border-radius: .5rem;
+.footer__twitter {
+    background: #55ACEE;
 }
 
-.footer__icon--twitter {
-    background-color: #55ACEE;
-}
-
-.footer__icon--youtube {
+.footer__youtube {
     background-color: #CD201F;
 }
 
-.footer__icon--facebook {
+.footer__facebook {
     background-color: #3B5998;
 }
 
-.footer__icon--instagram {
+.footer__instagram {
     background-color: #3F729B;
 }
 
-.footer__icon--github {
+.footer__github {
     background-color: #666;
 }
