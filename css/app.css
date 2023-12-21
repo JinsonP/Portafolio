@@ -130,7 +130,8 @@ img {
 
 /** Acerca de **/
 .acercade__imagen {
-    width: 15rem;
+    width: 100%;
+    height: auto;
     border: 10px solid rgb(255 255 255 / 0.20);
     border-radius: 50%;
     overflow: hidden;
