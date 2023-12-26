@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 :root {
-    --principal: #3895EA;
-    --secundario: #DD820D;
+    --principal: #06559F;
+    --secundario: #7B4C0E;
     --blanco: #fff;
 
     --fuente-principal: 'Open Sans', sans-serif;
@@ -91,10 +91,6 @@ img {
     transition-duration: 300ms;
 }
 
-.navegacion__enlace:hover {
-    background-color: var(--principal);
-}
-
 .header__contenido {
     width: 90%;
     margin: 25rem auto 0 auto;
@@ -142,8 +138,8 @@ img {
 .acercade__heading {
     padding-top: 2rem;
     color: var(--secundario);
-    font-weight: 400;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 4rem;
 }
 
 .acercade__texto {
@@ -217,14 +213,20 @@ img {
     border-radius: .5rem;
     padding: 1rem 3rem;
 }
+
+.trabajo__boton:hover {
+    background-color: #3B5998;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
 /** Contacto **/
 .contacto__heading {
     padding: 4rem 0;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 600;
     color: var(--principal);
 }
-
 
 .formulario {
     width: min( 70rem, 100% );
