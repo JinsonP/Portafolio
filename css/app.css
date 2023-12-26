@@ -49,7 +49,6 @@ img {
     cursor: pointer;
 }
 
-
 /** header **/
 .header {
     height: 70rem;
@@ -131,20 +130,14 @@ img {
 
 /** Acerca de **/
 .acercade__imagen {
-    width: 15rem;
-    height: auto;
+    width: 19rem;
+    height: 18rem;
     border: 10px solid rgb(255 255 255 / 0.20);
     border-radius: 50%;
     overflow: hidden;
     margin: -6rem auto 0 auto;
 }
 
-@media (min-width: 768px) {
-    .acercade__imagen {
-        width: 20rem;
-        margin: -10rem auto 0 auto;
-    }
-}
 
 .acercade__heading {
     padding-top: 2rem;
@@ -190,20 +183,40 @@ img {
     }
 }
 
-.trabajo__imagen {
-    border-radius: .5rem;
+.trabajo__card {
+    background-color: var(--blanco);
+    border-radius: .8rem;
 }
 
-.trabajo__titulo,
-.trabajo__tecnologias {
-    margin: 0;
-    text-align: center;
+.trabajo__contenido {
+    padding: 1.5rem;
+}
+
+.trabajo__imagen {
+    border-radius: .8rem .8rem 0 0;
 }
 
 .trabajo__titulo {
+    margin: 0;
+    font-size: 2.4rem;
+    text-align: center;
     color: var(--principal);
 }
 
+.trabajo__descripcion {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.trabajo__boton {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--principal);
+    color: var(--blanco);
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+}
 /** Contacto **/
 .contacto__heading {
     padding: 4rem 0;
@@ -211,6 +224,7 @@ img {
     font-weight: 300;
     color: var(--principal);
 }
+
 
 .formulario {
     width: min( 70rem, 100% );
